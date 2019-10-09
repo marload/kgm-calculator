@@ -1,14 +1,19 @@
 import React from "react";
+import "./scss/CalcInput.scss";
 
 function CalcInput({ onCreate }) {
     const handleChange = e => {
-        console.log(e.target.value);
-        onCreate(e.target.value);
+        if (e.target.value > 99999) {
+            e.target.value = 99999;
+            onCreate(99999);
+        } else {
+            onCreate(e.target.value);
+        }
     };
     return (
-        <div className="input-container">
+        <div className="input">
             <input
-                className="input-container__text"
+                className="input__text"
                 onChange={handleChange}
                 type="number"
             ></input>

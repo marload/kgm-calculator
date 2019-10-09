@@ -1,0 +1,19 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    background-color: #282828;
+
+    span {
+        color: #a0a0a0a0;
+    }
+    a {
+        color: #a0a0a0a0;
+        text-decoration: none;
+        padding-right: 10%;
+    }
+}

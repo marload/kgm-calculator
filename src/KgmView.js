@@ -1,10 +1,11 @@
 import React from "react";
+import "./scss/KgmView.scss";
 
 function KgmView({ kgm }) {
     return (
-        <div className="view-container">
-            <div className="view-container__kgm-number">{kgm}</div>
-            <div className="view-container__kgm-text">KGM</div>
+        <div className="view">
+            <div className="view__number">{kgm.toFixed(2)}</div>
+            <div className="view__text">KGM</div>
         </div>
     );
 }

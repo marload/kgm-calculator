@@ -1,4 +1,6 @@
 import React from "react";
+import "./scss/Calculator.scss";
+
 import CalcInput from "./CalcInput";
 import KgmView from "./KgmView";
 
@@ -15,7 +17,7 @@ class Calculator extends React.Component {
 
     render() {
         return (
-            <section className="container">
+            <section className="calculator">
                 <CalcInput onCreate={this.handleCreate} />
                 <KgmView kgm={this.state.kgm} />
             </section>
