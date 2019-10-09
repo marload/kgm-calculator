@@ -3,4 +3,12 @@
         border-radius: 150px;
         border: 5px solid #ffffff;
     }
+    .info-kgm__about-kgm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        font-family: "Muli", sans-serif;
+    }
 }
